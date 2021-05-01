@@ -5,9 +5,24 @@
 #' @import shiny
 #' @noRd
 app_ui <- function(request) {
+  
+  loading_screen <- tagList(
+    waiter::spin_3circles(),
+    h3("PRSenting your data, in a shiny-ier way", style = "color:black")
+  )
+  
   tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
+    
+    # Initiate shinyjs
+    shinyjs::useShinyjs(),
+    
+    waiter::use_waiter(),
+    waiter::use_steward(),
+    waiter::waiter_show_on_load(html = loading_screen),
+    
+    
     # Your application UI logic 
     fluidPage(
       h1("PRSent")
