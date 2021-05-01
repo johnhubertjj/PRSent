@@ -17,6 +17,8 @@
 ## Add one line by package you want to add as dependency
 usethis::use_package( "thinkr" )
 usethis::use_package( "waiter")
+usethis::use_package( "rlang" )
+usethis::use_package( "shinyjs" )
 
 ## Add modules ----
 ## Create a module infrastructure in R/
