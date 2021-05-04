@@ -22,11 +22,7 @@ app_ui <- function(request) {
     waiter::use_steward(),
     waiter::waiter_show_on_load(html = loading_screen),
     
-    
-    # Your application UI logic 
-    fluidPage(
-      h1("PRSent")
-    )
+    mod_Main_module_ui("Main_module_ui_1")
   )
 }
 
