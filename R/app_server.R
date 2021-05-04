@@ -5,6 +5,9 @@
 #' @import shiny
 #' @noRd
 app_server <- function( input, output, session ) {
-  # Your application server logic 
+  # Initiate reactive values
+  r <- reactiveValues()
   
+  # Your application server logic 
+  waiter::waiter_hide()
 }
