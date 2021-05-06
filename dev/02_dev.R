@@ -28,7 +28,7 @@ golem::add_module( name = "regression")
 
 ## Add helper functions ----
 ## Creates fct_* and utils_*
-golem::add_fct( "helpers" ) 
+golem::add_fct( "Access_GETandPOST_PGSCatalog" ) 
 golem::add_utils( "helpers" )
 
 ## External resources

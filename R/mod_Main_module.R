@@ -14,7 +14,7 @@ mod_Main_module_ui <- function(id){
     navbarPage(
       # Have the title be an image
       id = ns("PRSent_nav"),
-      title = div(img(src = 'www/PRSent_logo.png', style = "margin-top: -10px; padding-bottom:10px")),
+      title = div(img(src = 'www/PRSent_logo.png', style = "margin-top: -5px; padding-bottom:5px")),
       # Create a home page
       tabPanel("Home",
                icon = icon("home"),
