@@ -1,0 +1,10 @@
+Set	Threshold	R2	P	Coefficient	Standard.Error	Num_SNP
+Base	5e-08	-	-	-	-	2
+Base	1e-06	-	-	-	-	12
+Base	0.0001	-	-	-	-	224
+Base	0.01	-	-	-	-	6275
+Base	0.05	-	-	-	-	19850
+Base	0.1	-	-	-	-	31979
+Base	0.2	-	-	-	-	50558
+Base	0.5	-	-	-	-	85956
+Base	1	-	-	-	-	113989
