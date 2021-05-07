@@ -26,7 +26,7 @@ mod_Main_module_ui <- function(id){
                  tabPanel(
                    value = ns("run_regression"),
                    title = "Run regression",
-                   mod_regression_ui("regression_ui_1")
+                   mod_regression_ui(ns("regression_ui_1"))
                  ))
     )
   )

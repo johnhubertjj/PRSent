@@ -19,6 +19,7 @@ usethis::use_package( "thinkr" )
 usethis::use_package( "waiter")
 usethis::use_package( "rlang" )
 usethis::use_package( "shinyjs" )
+usethis::use_package( "shinipsum")
 
 ## Add modules ----
 ## Create a module infrastructure in R/

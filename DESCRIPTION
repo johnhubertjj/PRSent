@@ -9,6 +9,7 @@ Imports:
     golem (>= 0.3.1),
     processx,
     rlang,
+    shinipsum,
     shiny (>= 1.6.0),
     shinyjs,
     waiter
