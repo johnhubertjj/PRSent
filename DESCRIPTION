@@ -6,9 +6,14 @@ Description: A shiny application to analyse polygenic risk scores.
 License: MIT + file LICENSE
 Imports: 
     config (>= 0.3.1),
+    data.table,
+    feather,
     golem (>= 0.3.1),
     processx,
+    rlang,
+    shinipsum,
     shiny (>= 1.6.0),
+    shinyjs,
     waiter
 Encoding: UTF-8
 LazyData: true

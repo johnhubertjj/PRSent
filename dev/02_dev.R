@@ -17,15 +17,22 @@
 ## Add one line by package you want to add as dependency
 usethis::use_package( "thinkr" )
 usethis::use_package( "waiter")
+usethis::use_package( "rlang" )
+usethis::use_package( "shinyjs" )
+usethis::use_package( "shinipsum")
+usethis::use_package( "data.table")
+usethis::use_package( "feather")
 
 ## Add modules ----
 ## Create a module infrastructure in R/
-golem::add_module( name = "name_of_module1" ) # Name of the module
-golem::add_module( name = "name_of_module2" ) # Name of the module
+golem::add_module( name = "Main_module" ) # Name of the module
+golem::add_module( name = "Home" ) # Name of the module
+golem::add_module( name = "regression")
 
 ## Add helper functions ----
 ## Creates fct_* and utils_*
-golem::add_fct( "helpers" ) 
+golem::add_fct( "Access_GETandPOST_PGSCatalog" ) 
+golem::add_fct( "app_server" )
 golem::add_utils( "helpers" )
 
 ## External resources
