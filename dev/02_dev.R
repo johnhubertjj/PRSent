@@ -19,6 +19,9 @@ usethis::use_package( "thinkr" )
 usethis::use_package( "waiter")
 usethis::use_package( "rlang" )
 usethis::use_package( "shinyjs" )
+usethis::use_package( "shinipsum")
+usethis::use_package( "data.table")
+usethis::use_package( "feather")
 
 ## Add modules ----
 ## Create a module infrastructure in R/
@@ -28,7 +31,8 @@ golem::add_module( name = "regression")
 
 ## Add helper functions ----
 ## Creates fct_* and utils_*
-golem::add_fct( "helpers" ) 
+golem::add_fct( "Access_GETandPOST_PGSCatalog" ) 
+golem::add_fct( "app_server" )
 golem::add_utils( "helpers" )
 
 ## External resources
