@@ -15,6 +15,9 @@ app_server <- function( input, output, session ) {
     config <- config::get(config = "default", file = app_sys('golem-config.yml'))
   }
   
+  # Load in the PRSice example
+  data_prsice_example <- read.in.dataset(config$PRSice_input_example)
+  
   # Connect to the PRS server
   mod_Main_module_server("Main_module_ui_1")
   
