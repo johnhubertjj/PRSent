@@ -1,8 +1,8 @@
-#' app_server 
+#' read.in.dataset 
 #'
-#' @description A fct function
+#' @description A function that reads in different types of R data
 #'
-#' @return The return value, if any, from executing the function.
+#' @return The dataset that can be read by R
 #'
 #' @noRd
 read.in.dataset <- function( dataset_path, method = c("data.table", "RData", "feather", "rds", "Prsice")){
@@ -21,7 +21,11 @@ read.in.dataset <- function( dataset_path, method = c("data.table", "RData", "fe
   }
 }
 
-# Get the location of where the app is located
+#' production.or.development.environment
+#' 
+#' @description declare what enivironment PRSent is currently running in
+#' 
+#' @return the golem options when running PRSent::run_app(app_production = *THIS*)
 production.or.development.environment <- function(){
   in_production <- golem::get_golem_options("app_production")
   return(in_production)
