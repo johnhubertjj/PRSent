@@ -20,4 +20,10 @@ read.in.dataset <- function( dataset_path, method = c("data.table", "RData", "fe
     NULL
   }
 }
+
+# Get the location of where the app is located
+production.or.development.environment <- function(){
+  in_production <- golem::get_golem_options("app_production")
+  return(in_production)
+}
   
