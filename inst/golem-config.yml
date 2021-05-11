@@ -2,7 +2,7 @@ default:
   golem_name: PRSent
   golem_version: 0.0.0.9000
   app_prod: no
-  PRSice_input_example: "/home/johnhubert/PRSent/data/test_run_thesis_phenotype_2.prsice"
+  PRSice_input_example: "/home/johnhubert/PRSent/Data/test_run_thesis_phenotype_2.prsice"
 production:
   app_prod: yes
 dev:

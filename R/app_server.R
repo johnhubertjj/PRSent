@@ -16,7 +16,10 @@ app_server <- function( input, output, session ) {
   }
   
   # Load in the PRSice example
-  data_prsice_example <- read.in.dataset(config$PRSice_input_example)
+  data_prsice_example <- read.in.dataset(config$PRSice_input_example, method = "data.table")
+  
+  # Assign to petit r
+  r$data_prsice_example <- data_prsice_example
   
   # Connect to the PRS server
   mod_Main_module_server("Main_module_ui_1")
